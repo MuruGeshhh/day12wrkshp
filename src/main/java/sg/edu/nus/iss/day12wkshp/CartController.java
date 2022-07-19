@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import sg.edu.nus.iss.day12wkshp.CartService;
 
 @Controller
-@RequestMapping(path = {"/cart "})
+@RequestMapping(path = {"/cart"})
 public class CartController {
 
 
@@ -18,7 +18,7 @@ public class CartController {
     public String displayCart(Model model){
         CartService cs = new CartService();
 
-        List<item> cartItems = cs.getShoppingItems();
+        List<Item> cartItems = cs.getShoppingItems();
         model.addAttribute("cart", cartItems);
 
         return "cart" ;

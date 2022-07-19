@@ -2,7 +2,7 @@ package sg.edu.nus.iss.day12wkshp;
 
 //MODEL CLASS
 
-public class item {
+public class Item {
 
     private String itemName;
     private Integer quantity;
