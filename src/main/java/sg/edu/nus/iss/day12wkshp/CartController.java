@@ -27,7 +27,7 @@ public class CartController {
     }
 
 
-    @GetMapping("{itemname")
+    @GetMapping("{itemname}")
     public String filteredCart(
     @PathVariable (name = "itemname", required=true) String itemname,     
     Model model){

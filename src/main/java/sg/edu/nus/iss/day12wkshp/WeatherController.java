@@ -29,7 +29,7 @@ public class WeatherController {
 
 
         }
-       @GetMapping ({"city"})
+       @GetMapping ("{city}")
         public String weather2(
             @PathVariable(name = "city", required = true) String city,
             @RequestParam(name = "units" , defaultValue = "kilometers") String units,
