@@ -1,5 +1,7 @@
 package sg.edu.nus.iss.day12wkshp;
 
+import javax.annotation.Generated;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +29,7 @@ public class WeatherController {
 
 
         }
-
+       @GetMapping ({"city"})
         public String weather2(
             @PathVariable(name = "city", required = true) String city,
             @RequestParam(name = "units" , defaultValue = "kilometers") String units,

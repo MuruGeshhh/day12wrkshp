@@ -11,7 +11,7 @@ public class CartService {
         List<Item> lstItems = new ArrayList<>();
 
         Item itm = new Item();
-        itm.setItemName("Prada bag");
+        itm.setItemName("Prada Bag");
         itm.setQuantity(5);
         lstItems.add(itm);
 
@@ -26,7 +26,7 @@ public class CartService {
         lstItems.add(itm);
 
         itm = new Item();
-        itm.setItemName("LV TOT BAG");
+        itm.setItemName("Prada Shoe");
         itm.setQuantity(8);
         lstItems.add(itm);
 
